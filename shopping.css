@@ -1,9 +1,9 @@
 .meat {
-color= Red}
-.vegetables {
-color= Green
+background-color= Red}
+.vegetable {
+background-color= Green
 }
 .fruit {
-color= Blue}
-.drinks {
-color= Purple}
+background-color= Blue}
+.drink {
+background-color= Purple}
