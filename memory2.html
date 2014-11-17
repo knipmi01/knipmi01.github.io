@@ -1,40 +1,58 @@
 <html>
 <head>
   <style>
-  nav {
-    position: relative;
-    margin: 20px;
-    height: 175px;
-  width: 100px;
-  }
-  section {
-    position: absolute
-    height: 175px;
-  width: 100px;
-  border: 2px black;
-  background-color: lightblue;
-  border-radius: 10px;
-  }
-  .question {
-    background-color: lightblue;
-  }
-  .answer {
-    background-color: lightgray;
-    z-index: -1;
-  }
-  nav:hover .question {
-    display: none;
-  }
+    nav{
+      position: relative;
+      margin: 10px;
+      width:200px;
+      height:300px;
+      float:left;
+    }
+    section{
+      height:300px;
+      width:200px;
+      border: 2px solid black;
+      background-color: green;
+      border-radius: 10px;
+      position: absolute;
+    }
+    .question{
+      background-color:blue;
+    }
+    .answer{
+      background-color:gray;
+      z-index:-1;
+    }
+    nav:hover .question{
+      display: none;
+    }
   </style>
 </head>
-<body>
-<nav>
-<section class="question">
-<p>Who wears number 13 for the Chicago Cubs?</p>
-</section>
-<section class="answer">
-<p>Starlin Castro</p>
-</section>
-</nav>
-</body>
+  <body>
+  <nav>
+      <section class='question'>
+        <p>What is your favorite Color?</p>
+      </section>
+      <section class='answer'>
+        <p>Blue</p>
+      </section>
+  </nav>
+  <nav>
+      <section class='question'>
+        <p>What state are you from?</p>
+      </section>
+      <section class='answer'>
+        <p>Minnesota</p>
+      </section>
+  </nav>
+  <nav>
+      <section class='question'>
+        <p>What is my favorite baseball team?</p>
+      </section>
+      <section class='answer'>
+        <p>Chicago Cubs</p>
+      </section>
+  </nav>
+  </body>
 </html>
+
