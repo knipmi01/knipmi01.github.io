@@ -1,0 +1,40 @@
+<html>
+<head>
+  <style>
+  nav {
+    position: relative;
+    margin: 20px;
+  }
+  section {
+    position: absolute
+    top: 0;
+    left: 0;
+    height: 175px;
+  width: 100px;
+  border: 2px black;
+  background-color: lightblue;
+  border-radius: 10px;
+  }
+  .question {
+    background-color: lightblue;
+  }
+  .answer {
+    background-color: lightgray;
+    z-index: -1;
+  }
+  nav:hover .question {
+    display: none;
+  }
+  </style>
+</head>
+<body>
+<nav>
+<section class="question">
+Who wears number 13 for the Chicago Cubs?
+</section>
+<section class="answer">
+Starlin Castro
+</section>
+</nav>
+</body>
+</html>
