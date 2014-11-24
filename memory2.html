@@ -33,23 +33,18 @@
       top: 200;
       left: 62;
     }
-    var ClickCounter = {
- mediaClickCounter: 0,
-
- refreshMediaAds:function() {
-    if (this.mediaClickCounter < 2) {
-        this.mediaClickCounter++;
-    } else {
-        this.mediaClickCounter = 0;
-        refreshAds();
+    <script type="text/javascript">
+    counter = 0
+    updateCounter = function () {
+      counter = counter + 1;
+      countSpot = document.querySelector('#mycounter');
+      countSpot.innerHTML = "Correct: " + counter;
     }
- }
-};
   </style>
 </head>
   <body>
   <nav>
-      <input type="checkbox">
+      <input type="checkbox" onclick= "updateCounter();">
       <section class='question'>
         <p>What is your favorite Color?</p>
       </section>
@@ -58,7 +53,7 @@
       </section>
   </nav>
   <nav>
-      <input type="checkbox">
+      <input type="checkbox" onclick= "updateCounter();">
       <section class='question'>
         <p>What state are you from?</p>
       </section>
@@ -67,7 +62,7 @@
       </section>
   </nav>
   <nav>
-  <input type="checkbox">
+  <input type="checkbox" onclick= "updateCounter();">
       <section class='question'>
         <p>What is my favorite baseball team?</p>
       </section>
@@ -75,6 +70,7 @@
         <p>Chicago Cubs</p>
       </section>
   </nav>
+  <h2> id="myCounter" </h2>
   </body>
 </html>
 
