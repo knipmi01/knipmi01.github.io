@@ -33,9 +33,18 @@
       top: 200;
       left: 62;
     }
-    <script type="text/javascript">
-var counter = 0;
-</script>
+    var ClickCounter = {
+ mediaClickCounter: 0,
+
+ refreshMediaAds:function() {
+    if (this.mediaClickCounter < 2) {
+        this.mediaClickCounter++;
+    } else {
+        this.mediaClickCounter = 0;
+        refreshAds();
+    }
+ }
+};
   </style>
 </head>
   <body>
