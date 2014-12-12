@@ -17,6 +17,7 @@
       <button onclick="addItem();">Add</button>
       
       <script type="text/javascript">
+      window.onload + function() { restoreList('grocerylist',doneTask) };
        addItem = function() {
            myNewItem = document.querySelector('#item');
            myItemNode = document.createTextNode(myNewItem.value);
